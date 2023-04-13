@@ -23,6 +23,10 @@ public:
 	double getOutput();
 	double getOutput(double);
 	double getOutput(double, double);
+	double getP() const;
+	double getI() const;
+	double getD() const;
+	double getF() const;
 
 private:
 	double clamp(double, double, double);

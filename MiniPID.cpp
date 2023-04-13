@@ -286,7 +286,39 @@ double MiniPID::getOutput(){
 double MiniPID::getOutput(double actual){
 	return getOutput(actual,setpoint);
 }
-	
+
+/**
+ * 
+ * @return current value for the proportional gain.
+ */
+double MiniPID::getP() const{
+	return P;
+}
+
+/**
+ * 
+ * @return current value for the integral gain.
+ */
+double MiniPID::getI() const{
+	return I;
+}
+
+/**
+ * 
+ * @return current value for the derivative gain.
+ */
+double MiniPID::getD() const{
+	return D;
+}
+
+/**
+ * 
+ * @return current value for the feed-forward gain.
+ */
+double MiniPID::getF() const{
+	return F;
+}
+
 /**
  * Resets the controller. this->erases the I term buildup, and removes D gain on the next loop.
  */
