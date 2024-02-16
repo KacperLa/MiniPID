@@ -311,6 +311,10 @@ double MiniPID::getD() const{
 	return D;
 }
 
+void MiniPID::getGains(double& p, double& i, double& d) const{
+	p=P;i=I;d=D;
+}
+
 /**
  * 
  * @return current value for the feed-forward gain.

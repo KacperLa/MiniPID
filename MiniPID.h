@@ -27,6 +27,8 @@ public:
 	double getI() const;
 	double getD() const;
 	double getF() const;
+	void   getGains(double& p, double& i, double& d) const;
+
 
 private:
 	double clamp(double, double, double);
